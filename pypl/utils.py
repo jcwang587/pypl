@@ -3,7 +3,6 @@ import xml.etree.ElementTree as ET
 import h5py
 import yaml
 
-
 ry2ev = 13.605693122994017
 bohr2ang = 0.529177210903
 
