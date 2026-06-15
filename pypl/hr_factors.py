@@ -260,7 +260,7 @@ class hr_factors:
         The computed Huang-Rhys factors are stored in ``self.hrf``.
         """
 
-        inv_cell = np.linalg.inv(cell_parameters.T)
+        inv_cell = np.linalg.inv(cell_parameters)
         gs_frac = np.dot(gs_coord, inv_cell)
         es_frac = np.dot(es_coord, inv_cell)
         dis_frac = es_frac - gs_frac
