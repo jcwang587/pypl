@@ -31,7 +31,7 @@ class hr_factors:
         self.nom = freqs.shape[0]
         self.nom_translational = 3
 
-        self.nom_imag_freq = np.sum(np.where(self.freqs[3:] < 0.0))
+        self.nom_imag_freq = int(np.sum(self.freqs[3:] < 0.0))
         if self.nom_imag_freq > 0:
             warnings.warn(
                 f"{self.nom_imag_freq} imaginary mode(s) detected in the phonon spectrum. "
